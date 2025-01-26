@@ -7,9 +7,14 @@ export default function Home() {
     fetch("/api/getDirectory")
       .then((res) => res.json())
       .then((data) => setDirectory(data))
-      .then((data) => console.log('CLIIENTTE: ', data))
+    //   .then((data) => console.log('CLIIENTTE: ', data))
       .catch((err) => console.error("Error fetching directory:", err));
   }, []);
+
+  const handleSignInButtonClick = event => {
+    console.log('CLICKED: ', event.target.value)
+    window.location.href = "/api/useSSO";
+  }
 
   return (
     <div>
@@ -25,6 +30,7 @@ export default function Home() {
             <p>Loading...</p>
         )}
       </ul>
+      <button onClick={handleSignInButtonClick} value='something'>SIGN IN WITH SSO</button>
     </div>
   );
 }
