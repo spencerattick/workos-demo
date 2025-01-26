@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-// [ ] redirect to a welcome page with the user's user's first and last name from identity provider
 // [ ] allow user to click into a page that displays the Directory Sync contents
 // [ ] ADD ABILITY TO LOG IN WITH TEST SSO OR OKTA
 // [ ] double check logout functionality (might not be working right)

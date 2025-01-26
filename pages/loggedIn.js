@@ -30,10 +30,10 @@ export default function LoggedIn() {
 
   return (
     <>
-      <h1>Welcome! Glad you could log in!</h1>
+      <h1>Welcome!</h1>
       <p>
         {userProfile ? (
-          <pre>{JSON.stringify(userProfile, null, 2)}</pre>
+          <p>Nice to see you, {userProfile.firstName} {userProfile.lastName}!</p>
         ) : (
           "Loading profile information..."
         )}
