@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-// [ ] create a sign in page that doesn't let you see anything until you use SSO
 // [ ] redirect to a welcome page with the user's user's first and last name from identity provider
 // [ ] allow user to click into a page that displays the Directory Sync contents
 // [ ] ADD ABILITY TO LOG IN WITH TEST SSO OR OKTA
