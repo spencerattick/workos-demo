@@ -1,4 +1,4 @@
-export default function Redirect() {
+export default function LoggedIn() {
     const handleLogOutClick = () => {
         console.log('LOGOUT')
         window.location.href = "/api/handleLogout";
@@ -6,7 +6,7 @@ export default function Redirect() {
 
     return (
         <>
-            <h1>CALLBACK REDIRECT</h1>
+            <h1>Welcome! Glad you could log in!</h1>
             <button onClick={handleLogOutClick}>
                 LOG OUT
             </button>

@@ -27,8 +27,8 @@ export default function Home() {
 
   return (
     <div>
-      <h1>Directory</h1>
-      <ul>
+      <h1>Welcome! Please sign in!</h1>
+      {/* <ul>
       {directory ? (
         <ul>
           {directory.list.data.map((user, index) => (
@@ -38,7 +38,7 @@ export default function Home() {
         ) : (
             <p>Loading...</p>
         )}
-      </ul>
+      </ul> */}
       <button onClick={handleSignInButtonClick} value='something'>SIGN IN WITH SSO</button>
     </div>
   );

@@ -7,10 +7,10 @@ export default (req, res) => {
         console.log('SERVER LOGOUT')
         const logoutUrl = workos.userManagement.getLogoutUrl({
             sessionId: 'session_01HQAG1HENBZMAZD82YRXDFC0B',
-            returnTo: 'http://localhost:3000/loggedOut',
+            returnTo: 'http://localhost:3000/',
           });
         
-          res.redirect('http://localhost:3000/loggedOut')
+          res.redirect('http://localhost:3000/')
           
     } catch (error) {
         res.status(500).json({ error: error.message });

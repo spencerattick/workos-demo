@@ -10,7 +10,7 @@ export default (_req, res) => {
   const organization = 'org_01JJEVHMHH4CFQ7MWHT1DPCGHS';
 
   // The callback URI WorkOS should redirect to after the authentication
-  const redirectUri = 'http://localhost:3000/callback';
+  const redirectUri = 'http://localhost:3000/loggedIn';
 
   const authorizationUrl = workos.sso.getAuthorizationUrl({
     organization,
