@@ -2,10 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/loggedIn": "pages/loggedIn.js",
+  "/directory": "pages/directory.js",
   "/": "pages/index.js",
-  "/api/useSSO": "pages/api/useSSO.js",
-  "/api/getDirectory": "pages/api/getDirectory.js",
-  "/api/loggedIn": "pages/api/loggedIn.js",
-  "/api/getProfile": "pages/api/getProfile.js"
+  "/loggedIn": "pages/loggedIn.js",
+  "/api/getDirectory": "pages/api/getDirectory.js"
 }

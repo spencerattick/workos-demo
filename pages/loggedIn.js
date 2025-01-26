@@ -28,6 +28,10 @@ export default function LoggedIn() {
     window.location.href = "/api/handleLogout";
   };
 
+  const handleSeeDirectoryClick = () => {
+    window.location.href = "/directory";
+  }
+
   return (
     <>
       <h1>Welcome!</h1>
@@ -38,6 +42,7 @@ export default function LoggedIn() {
           "Loading profile information..."
         )}
       </p>
+      <button onClick={handleSeeDirectoryClick}>SEE DIRECTORY</button>
       <button onClick={handleLogOutClick}>LOG OUT</button>
     </>
   );
