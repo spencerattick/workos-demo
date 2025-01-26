@@ -29,7 +29,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ LoggedIn)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction LoggedIn() {\n    const handleLogOutClick = ()=>{\n        console.log('LOGOUT');\n        window.location.href = \"/api/handleLogout\";\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                children: \"Welcome! Glad you could log in!\"\n            }, void 0, false, {\n                fileName: \"/Users/sattick/Desktop/workos-demo/pages/loggedIn.js\",\n                lineNumber: 9,\n                columnNumber: 13\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                onClick: handleLogOutClick,\n                children: \"LOG OUT\"\n            }, void 0, false, {\n                fileName: \"/Users/sattick/Desktop/workos-demo/pages/loggedIn.js\",\n                lineNumber: 10,\n                columnNumber: 13\n            }, this)\n        ]\n    }, void 0, true);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9sb2dnZWRJbi5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7O0FBQWUsU0FBU0E7SUFDcEIsTUFBTUMsb0JBQW9CO1FBQ3RCQyxRQUFRQyxHQUFHLENBQUM7UUFDWkMsT0FBT0MsUUFBUSxDQUFDQyxJQUFJLEdBQUc7SUFDM0I7SUFFQSxxQkFDSTs7MEJBQ0ksOERBQUNDOzBCQUFHOzs7Ozs7MEJBQ0osOERBQUNDO2dCQUFPQyxTQUFTUjswQkFBbUI7Ozs7Ozs7O0FBS2hEIiwic291cmNlcyI6WyIvVXNlcnMvc2F0dGljay9EZXNrdG9wL3dvcmtvcy1kZW1vL3BhZ2VzL2xvZ2dlZEluLmpzIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIExvZ2dlZEluKCkge1xuICAgIGNvbnN0IGhhbmRsZUxvZ091dENsaWNrID0gKCkgPT4ge1xuICAgICAgICBjb25zb2xlLmxvZygnTE9HT1VUJylcbiAgICAgICAgd2luZG93LmxvY2F0aW9uLmhyZWYgPSBcIi9hcGkvaGFuZGxlTG9nb3V0XCI7XG4gICAgfVxuXG4gICAgcmV0dXJuIChcbiAgICAgICAgPD5cbiAgICAgICAgICAgIDxoMT5XZWxjb21lISBHbGFkIHlvdSBjb3VsZCBsb2cgaW4hPC9oMT5cbiAgICAgICAgICAgIDxidXR0b24gb25DbGljaz17aGFuZGxlTG9nT3V0Q2xpY2t9PlxuICAgICAgICAgICAgICAgIExPRyBPVVRcbiAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICA8Lz5cbiAgICApXG59Il0sIm5hbWVzIjpbIkxvZ2dlZEluIiwiaGFuZGxlTG9nT3V0Q2xpY2siLCJjb25zb2xlIiwibG9nIiwid2luZG93IiwibG9jYXRpb24iLCJocmVmIiwiaDEiLCJidXR0b24iLCJvbkNsaWNrIl0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./pages/loggedIn.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ LoggedIn)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ \"./node_modules/next/router.js\");\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\nfunction LoggedIn() {\n    const router = (0,next_router__WEBPACK_IMPORTED_MODULE_2__.useRouter)();\n    const { code } = router.query;\n    const [userProfile, setUserProfile] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)({\n        \"LoggedIn.useEffect\": ()=>{\n            if (code) {\n                fetch(`/api/getProfile?code=${code}`).then({\n                    \"LoggedIn.useEffect\": (res)=>{\n                        if (!res.ok) {\n                            throw new Error(\"Failed to fetch user profile\");\n                        }\n                        return res.json();\n                    }\n                }[\"LoggedIn.useEffect\"]).then({\n                    \"LoggedIn.useEffect\": (data)=>{\n                        console.log(\"Fetched profile:\", data);\n                        setUserProfile(data);\n                    }\n                }[\"LoggedIn.useEffect\"]).catch({\n                    \"LoggedIn.useEffect\": (err)=>console.error(\"Error fetching profile:\", err)\n                }[\"LoggedIn.useEffect\"]);\n            }\n        }\n    }[\"LoggedIn.useEffect\"], [\n        code\n    ]);\n    const handleLogOutClick = ()=>{\n        console.log(\"LOGOUT\");\n        window.location.href = \"/api/handleLogout\";\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                children: \"Welcome! Glad you could log in!\"\n            }, void 0, false, {\n                fileName: \"/Users/sattick/Desktop/workos-demo/pages/loggedIn.js\",\n                lineNumber: 33,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                children: userProfile ? /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"pre\", {\n                    children: JSON.stringify(userProfile, null, 2)\n                }, void 0, false, {\n                    fileName: \"/Users/sattick/Desktop/workos-demo/pages/loggedIn.js\",\n                    lineNumber: 36,\n                    columnNumber: 11\n                }, this) : \"Loading profile information...\"\n            }, void 0, false, {\n                fileName: \"/Users/sattick/Desktop/workos-demo/pages/loggedIn.js\",\n                lineNumber: 34,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                onClick: handleLogOutClick,\n                children: \"LOG OUT\"\n            }, void 0, false, {\n                fileName: \"/Users/sattick/Desktop/workos-demo/pages/loggedIn.js\",\n                lineNumber: 41,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9sb2dnZWRJbi5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUE0QztBQUNKO0FBRXpCLFNBQVNHO0lBQ3RCLE1BQU1DLFNBQVNGLHNEQUFTQTtJQUN4QixNQUFNLEVBQUVHLElBQUksRUFBRSxHQUFHRCxPQUFPRSxLQUFLO0lBQzdCLE1BQU0sQ0FBQ0MsYUFBYUMsZUFBZSxHQUFHUCwrQ0FBUUEsQ0FBQztJQUUvQ0QsZ0RBQVNBOzhCQUFDO1lBQ1IsSUFBSUssTUFBTTtnQkFDUkksTUFBTSxDQUFDLHFCQUFxQixFQUFFSixNQUFNLEVBQ2pDSyxJQUFJOzBDQUFDLENBQUNDO3dCQUNMLElBQUksQ0FBQ0EsSUFBSUMsRUFBRSxFQUFFOzRCQUNYLE1BQU0sSUFBSUMsTUFBTTt3QkFDbEI7d0JBQ0EsT0FBT0YsSUFBSUcsSUFBSTtvQkFDakI7eUNBQ0NKLElBQUk7MENBQUMsQ0FBQ0s7d0JBQ0xDLFFBQVFDLEdBQUcsQ0FBQyxvQkFBb0JGO3dCQUNoQ1AsZUFBZU87b0JBQ2pCO3lDQUNDRyxLQUFLOzBDQUFDLENBQUNDLE1BQVFILFFBQVFJLEtBQUssQ0FBQywyQkFBMkJEOztZQUM3RDtRQUNGOzZCQUFHO1FBQUNkO0tBQUs7SUFFVCxNQUFNZ0Isb0JBQW9CO1FBQ3hCTCxRQUFRQyxHQUFHLENBQUM7UUFDWkssT0FBT0MsUUFBUSxDQUFDQyxJQUFJLEdBQUc7SUFDekI7SUFFQSxxQkFDRTs7MEJBQ0UsOERBQUNDOzBCQUFHOzs7Ozs7MEJBQ0osOERBQUNDOzBCQUNFbkIsNEJBQ0MsOERBQUNvQjs4QkFBS0MsS0FBS0MsU0FBUyxDQUFDdEIsYUFBYSxNQUFNOzs7OzsyQkFFeEM7Ozs7OzswQkFHSiw4REFBQ3VCO2dCQUFPQyxTQUFTVjswQkFBbUI7Ozs7Ozs7O0FBRzFDIiwic291cmNlcyI6WyIvVXNlcnMvc2F0dGljay9EZXNrdG9wL3dvcmtvcy1kZW1vL3BhZ2VzL2xvZ2dlZEluLmpzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHVzZUVmZmVjdCwgdXNlU3RhdGUgfSBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCB7IHVzZVJvdXRlciB9IGZyb20gXCJuZXh0L3JvdXRlclwiO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBMb2dnZWRJbigpIHtcbiAgY29uc3Qgcm91dGVyID0gdXNlUm91dGVyKCk7XG4gIGNvbnN0IHsgY29kZSB9ID0gcm91dGVyLnF1ZXJ5O1xuICBjb25zdCBbdXNlclByb2ZpbGUsIHNldFVzZXJQcm9maWxlXSA9IHVzZVN0YXRlKG51bGwpO1xuXG4gIHVzZUVmZmVjdCgoKSA9PiB7XG4gICAgaWYgKGNvZGUpIHtcbiAgICAgIGZldGNoKGAvYXBpL2dldFByb2ZpbGU/Y29kZT0ke2NvZGV9YClcbiAgICAgICAgLnRoZW4oKHJlcykgPT4ge1xuICAgICAgICAgIGlmICghcmVzLm9rKSB7XG4gICAgICAgICAgICB0aHJvdyBuZXcgRXJyb3IoXCJGYWlsZWQgdG8gZmV0Y2ggdXNlciBwcm9maWxlXCIpO1xuICAgICAgICAgIH1cbiAgICAgICAgICByZXR1cm4gcmVzLmpzb24oKTtcbiAgICAgICAgfSlcbiAgICAgICAgLnRoZW4oKGRhdGEpID0+IHtcbiAgICAgICAgICBjb25zb2xlLmxvZyhcIkZldGNoZWQgcHJvZmlsZTpcIiwgZGF0YSk7XG4gICAgICAgICAgc2V0VXNlclByb2ZpbGUoZGF0YSk7XG4gICAgICAgIH0pXG4gICAgICAgIC5jYXRjaCgoZXJyKSA9PiBjb25zb2xlLmVycm9yKFwiRXJyb3IgZmV0Y2hpbmcgcHJvZmlsZTpcIiwgZXJyKSk7XG4gICAgfVxuICB9LCBbY29kZV0pO1xuXG4gIGNvbnN0IGhhbmRsZUxvZ091dENsaWNrID0gKCkgPT4ge1xuICAgIGNvbnNvbGUubG9nKFwiTE9HT1VUXCIpO1xuICAgIHdpbmRvdy5sb2NhdGlvbi5ocmVmID0gXCIvYXBpL2hhbmRsZUxvZ291dFwiO1xuICB9O1xuXG4gIHJldHVybiAoXG4gICAgPD5cbiAgICAgIDxoMT5XZWxjb21lISBHbGFkIHlvdSBjb3VsZCBsb2cgaW4hPC9oMT5cbiAgICAgIDxwPlxuICAgICAgICB7dXNlclByb2ZpbGUgPyAoXG4gICAgICAgICAgPHByZT57SlNPTi5zdHJpbmdpZnkodXNlclByb2ZpbGUsIG51bGwsIDIpfTwvcHJlPlxuICAgICAgICApIDogKFxuICAgICAgICAgIFwiTG9hZGluZyBwcm9maWxlIGluZm9ybWF0aW9uLi4uXCJcbiAgICAgICAgKX1cbiAgICAgIDwvcD5cbiAgICAgIDxidXR0b24gb25DbGljaz17aGFuZGxlTG9nT3V0Q2xpY2t9PkxPRyBPVVQ8L2J1dHRvbj5cbiAgICA8Lz5cbiAgKTtcbn1cbiJdLCJuYW1lcyI6WyJ1c2VFZmZlY3QiLCJ1c2VTdGF0ZSIsInVzZVJvdXRlciIsIkxvZ2dlZEluIiwicm91dGVyIiwiY29kZSIsInF1ZXJ5IiwidXNlclByb2ZpbGUiLCJzZXRVc2VyUHJvZmlsZSIsImZldGNoIiwidGhlbiIsInJlcyIsIm9rIiwiRXJyb3IiLCJqc29uIiwiZGF0YSIsImNvbnNvbGUiLCJsb2ciLCJjYXRjaCIsImVyciIsImVycm9yIiwiaGFuZGxlTG9nT3V0Q2xpY2siLCJ3aW5kb3ciLCJsb2NhdGlvbiIsImhyZWYiLCJoMSIsInAiLCJwcmUiLCJKU09OIiwic3RyaW5naWZ5IiwiYnV0dG9uIiwib25DbGljayJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/loggedIn.js\n");
 
 /***/ }),
 
@@ -53,6 +53,16 @@ module.exports = require("react");
 
 /***/ }),
 
+/***/ "react-dom":
+/*!****************************!*\
+  !*** external "react-dom" ***!
+  \****************************/
+/***/ ((module) => {
+
+module.exports = require("react-dom");
+
+/***/ }),
+
 /***/ "react/jsx-dev-runtime":
 /*!****************************************!*\
   !*** external "react/jsx-dev-runtime" ***!
@@ -73,6 +83,16 @@ module.exports = require("react/jsx-runtime");
 
 /***/ }),
 
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/***/ ((module) => {
+
+module.exports = require("fs");
+
+/***/ }),
+
 /***/ "path":
 /*!***********************!*\
   !*** external "path" ***!
@@ -80,6 +100,26 @@ module.exports = require("react/jsx-runtime");
 /***/ ((module) => {
 
 module.exports = require("path");
+
+/***/ }),
+
+/***/ "stream":
+/*!*************************!*\
+  !*** external "stream" ***!
+  \*************************/
+/***/ ((module) => {
+
+module.exports = require("stream");
+
+/***/ }),
+
+/***/ "zlib":
+/*!***********************!*\
+  !*** external "zlib" ***!
+  \***********************/
+/***/ ((module) => {
+
+module.exports = require("zlib");
 
 /***/ })
 
