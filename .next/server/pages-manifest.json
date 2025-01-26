@@ -3,7 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/api/useSSO": "pages/api/useSSO.js",
-  "/api/getDirectory": "pages/api/getDirectory.js",
-  "/callback": "pages/callback.js"
+  "/callback": "pages/callback.js",
+  "/loggedOut": "pages/loggedOut.js"
 }

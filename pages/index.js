@@ -1,5 +1,14 @@
 import { useEffect, useState } from "react";
 
+// [ ] create a sign in page that doesn't let you see anything until you use SSO
+// [ ] redirect to a welcome page with the user's user's first and last name from identity provider
+// [ ] allow user to click into a page that displays the Directory Sync contents
+// [ ] ADD ABILITY TO LOG IN WITH TEST SSO OR OKTA
+// [ ] double check logout functionality (might not be working right)
+// [ ] ensure all /api files are using try/catch
+// [ ] FIGURE OUT WHY USERS AREN'T ADDED TO GROUP WITH TEST SSO
+// [ ] Deploy to Vercel
+
 export default function Home() {
   const [directory, setDirectory] = useState(null);
 
