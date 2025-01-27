@@ -1,17 +1,17 @@
-// [ ] ADD ABILITY TO LOG IN WITH TEST SSO OR OKTA
 // [ ] double check logout functionality (might not be working right)
 // [ ] maintain firstname/lastname when switching from directory page back to the loggedIn page
 // [ ] ensure all /api files are using try/catch
 // [ ] FIGURE OUT WHY USERS AREN'T ADDED TO GROUP WITH TEST SSO
 // [ ] Deploy to Vercel
+// import '../styles/index.css'
 
 export default function Home() {
   const handleSignInOktaButtonClick = () => {
-    window.location.href = "/api/useSSO?okta";
+    window.location.href = "/api/useSSO?okta"
   }
 
   const handleSignInTestButtonClick = () => {
-    window.location.href = "/api/useSSO?test";
+    window.location.href = "/api/useSSO?test"
   }
 
   return (
