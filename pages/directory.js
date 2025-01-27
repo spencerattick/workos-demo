@@ -7,7 +7,6 @@ export default function Directory() {
         fetch("/api/getDirectory")
           .then((res) => res.json())
           .then((data) => setDirectory(data))
-        //   .then((data) => console.log('CLIIENTTE: ', data))
           .catch((err) => console.error("Error fetching directory:", err));
       }, []);
 
@@ -18,17 +17,17 @@ export default function Directory() {
   return (
     <>
       <h1>DIRECTORY!</h1>
+      <ul>
+        {directory ? (
             <ul>
-      {directory ? (
-        <ul>
-          {directory.list.data.map((user, index) => (
-            <li key={index}>{user.firstName}</li>
-          ))}
+            {directory.list.data.map((user, index) => (
+                <li key={index}>{user.firstName}</li>
+            ))}
+            </ul>
+            ) : (
+                <p>Loading...</p>
+            )}
         </ul>
-        ) : (
-            <p>Loading...</p>
-        )}
-      </ul>
       <button onClick={handleGoBackClick}>GO BACK</button>
     </>
   );

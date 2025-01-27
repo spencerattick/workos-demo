@@ -3,5 +3,7 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/api/useSSO": "pages/api/useSSO.js"
+  "/loggedIn": "pages/loggedIn.js",
+  "/directory": "pages/directory.js",
+  "/api/getDirectory": "pages/api/getDirectory.js"
 }

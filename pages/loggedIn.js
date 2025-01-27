@@ -4,44 +4,51 @@ import { useRouter } from "next/router";
 export default function LoggedIn() {
   const router = useRouter();
   const { code } = router.query;
+
   const [userProfile, setUserProfile] = useState(null);
 
+  const fetchProfile = async (authCode) => {
+    try {
+      const res = await fetch(`/api/getProfile?code=${authCode}`);
+      if (!res.ok) {
+        throw new Error("Failed to fetch user profile");
+      }
+      const data = await res.json();
+      setUserProfile(data);
+      localStorage.setItem("userProfile", JSON.stringify(data)); 
+    } catch (err) {
+      console.error("Error fetching profile:", err);
+    }
+  };
+
   useEffect(() => {
-    if (code) {
-      fetch(`/api/getProfile?code=${code}`)
-        .then((res) => {
-          if (!res.ok) {
-            throw new Error("Failed to fetch user profile");
-          }
-          return res.json();
-        })
-        .then((data) => {
-          console.log("Fetched profile:", data);
-          setUserProfile(data);
-        })
-        .catch((err) => console.error("Error fetching profile:", err));
+    const savedProfile = localStorage.getItem("userProfile");
+    if (savedProfile) {
+      setUserProfile(JSON.parse(savedProfile));
+    } else if (code) {
+      fetchProfile(code);
     }
   }, [code]);
 
   const handleLogOutClick = () => {
-    console.log("LOGOUT");
+    localStorage.removeItem("userProfile"); /
     window.location.href = "/api/handleLogout";
   };
 
   const handleSeeDirectoryClick = () => {
     window.location.href = "/directory";
-  }
+  };
 
   return (
     <>
       <h1>Welcome!</h1>
-      <p>
-        {userProfile ? (
-          <p>Nice to see you, {userProfile.firstName} {userProfile.lastName}!</p>
-        ) : (
-          "Loading profile information..."
-        )}
-      </p>
+      {userProfile ? (
+        <p>
+          Nice to see you, <strong>{userProfile.firstName} {userProfile.lastName}</strong>!
+        </p>
+      ) : (
+        <p>Loading profile information...</p>
+      )}
       <button onClick={handleSeeDirectoryClick}>SEE DIRECTORY</button>
       <button onClick={handleLogOutClick}>LOG OUT</button>
     </>

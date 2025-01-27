@@ -2,6 +2,7 @@
 // [ ] maintain firstname/lastname when switching from directory page back to the loggedIn page
 // [ ] ensure all /api files are using try/catch
 // [ ] FIGURE OUT WHY USERS AREN'T ADDED TO GROUP WITH TEST SSO
+// [ ] choose semi colons or no semi colons
 // import '../styles/index.css'
 
 export default function Home() {
