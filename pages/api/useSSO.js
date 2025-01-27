@@ -6,7 +6,7 @@ const clientId = process.env.WORKOS_CLIENT_ID;
 export default async (req, res) => {
   const organization = req.url.includes('okta') ? 'org_01JJEVHMHH4CFQ7MWHT1DPCGHS' : 'org_01JJBZCB0GMQZ2VM7PC0RP1Z6E';
 
-  const redirectUri = 'https://workos-demo-ashen.vercel.app/api/loggedIn';
+  const redirectUri = req.url + '/api/loggedIn';
 
   const authorizationUrl = workos.sso.getAuthorizationUrl({
     organization,
