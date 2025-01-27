@@ -11,6 +11,10 @@ export default function Directory() {
           .catch((err) => console.error("Error fetching directory:", err));
       }, []);
 
+    const handleGoBackClick = () => {
+        window.location.href = "/loggedIn";
+    }
+
   return (
     <>
       <h1>DIRECTORY!</h1>
@@ -25,6 +29,7 @@ export default function Directory() {
             <p>Loading...</p>
         )}
       </ul>
+      <button onClick={handleGoBackClick}>GO BACK</button>
     </>
   );
 }

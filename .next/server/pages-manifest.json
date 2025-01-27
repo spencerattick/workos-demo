@@ -2,8 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/directory": "pages/directory.js",
-  "/": "pages/index.js",
   "/loggedIn": "pages/loggedIn.js",
-  "/api/getDirectory": "pages/api/getDirectory.js"
+  "/": "pages/index.js",
+  "/api/useSSO": "pages/api/useSSO.js"
 }
