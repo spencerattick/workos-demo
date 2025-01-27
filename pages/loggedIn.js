@@ -31,7 +31,7 @@ export default function LoggedIn() {
   }, [code]);
 
   const handleLogOutClick = () => {
-    localStorage.removeItem("userProfile"); /
+    localStorage.removeItem("userProfile"); 
     window.location.href = "/api/handleLogout";
   };
 
