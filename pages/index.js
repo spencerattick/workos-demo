@@ -19,8 +19,10 @@ export default function Home() {
   return (
     <div className={styles.welcomePage}>
       <h1>Welcome! Please sign in!</h1>
-      <button onClick={handleSignInOktaButtonClick}>SIGN IN WITH OKTA</button>
-      <button onClick={handleSignInTestButtonClick}>SIGN IN WITH TEST SSO</button>
+      <div className='button-container'>
+        <button onClick={handleSignInOktaButtonClick}>SIGN IN WITH OKTA</button>
+        <button onClick={handleSignInTestButtonClick}>SIGN IN WITH TEST SSO</button>
+      </div>      
     </div>
   );
 }
