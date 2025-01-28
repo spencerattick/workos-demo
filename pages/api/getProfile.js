@@ -12,7 +12,7 @@ export default async (req, res) => {
   try {
     const { profile } = await workos.sso.getProfileAndToken({
       code,
-      clientId: process.env.WORKOS_CLIENT_ID,
+      clientId: process.env.WORKOS_CLIENT_ID
     });
 
     console.log("Retrieved profile:", profile);
