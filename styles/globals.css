@@ -18,8 +18,12 @@
   button {
     background-color: #FBE9D0;
     color: #874F41;
-    padding: 8px;
+    padding: 2%;
     font-size: medium;
+  }
+
+  p, h1 {
+    text-align: center;
   }
 
   h1 {
@@ -29,6 +33,10 @@
   p, li {
     font-size: 1.5em;
     color: #90AEAD;
+  }
+
+  li {
+    padding: 2%;
   }
 
   .button-container {

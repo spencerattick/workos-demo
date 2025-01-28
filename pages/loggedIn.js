@@ -49,8 +49,10 @@ export default function LoggedIn() {
       ) : (
         <p>Loading profile information...</p>
       )}
-      <button onClick={handleSeeDirectoryClick}>SEE DIRECTORY</button>
-      <button onClick={handleLogOutClick}>LOG OUT</button>
+      <div className="button-container"> 
+        <button onClick={handleSeeDirectoryClick}>SEE DIRECTORY</button>
+        <button onClick={handleLogOutClick}>LOG OUT</button>
+      </div>
     </>
   );
 }

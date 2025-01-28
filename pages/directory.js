@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function Directory() {
     const [directory, setDirectory] = useState(null);
+    // const [userEmail, setUserEmail] = useState(null);
 
     useEffect(() => {
         fetch("/api/getDirectory")
@@ -21,7 +22,7 @@ export default function Directory() {
         {directory ? (
             <ul>
             {directory.list.data.map((user, index) => (
-                <li key={index}>{user.firstName}</li>
+                <li key={index}>{user.firstName} {user.lastName}</li>
             ))}
             </ul>
             ) : (
