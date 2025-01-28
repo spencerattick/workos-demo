@@ -1,9 +1,11 @@
 // [ ] double check logout functionality (might not be working right)
-// [ ] maintain firstname/lastname when switching from directory page back to the loggedIn page
 // [ ] ensure all /api files are using try/catch
 // [ ] FIGURE OUT WHY USERS AREN'T ADDED TO GROUP WITH TEST SSO
+// [ ] Make sure EVERYTHING works without localhost
+// [ ] fill out readme
+// [ ] figure out how to log into the app if user clicks the tile in Okta
 // [ ] choose semi colons or no semi colons
-// import '../styles/index.css'
+import styles from '../styles/index.module.css';
 
 export default function Home() {
   const handleSignInOktaButtonClick = () => {
@@ -15,7 +17,7 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <div className={styles.welcomePage}>
       <h1>Welcome! Please sign in!</h1>
       <button onClick={handleSignInOktaButtonClick}>SIGN IN WITH OKTA</button>
       <button onClick={handleSignInTestButtonClick}>SIGN IN WITH TEST SSO</button>
