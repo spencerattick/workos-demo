@@ -14,21 +14,24 @@ export default function LoggedIn() {
         throw new Error("Failed to fetch user profile");
       }
       const data = await res.json();
-      setUserProfile(data);
+
       localStorage.setItem("userProfile", JSON.stringify(data)); 
+      setUserProfile(data); 
+
     } catch (err) {
       console.error("Error fetching profile:", err);
     }
   };
 
   useEffect(() => {
+    if (!router.isReady) return; 
     const savedProfile = localStorage.getItem("userProfile");
     if (savedProfile) {
       setUserProfile(JSON.parse(savedProfile));
-    } else if (code) {
-      fetchProfile(code);
+    } else if (router.query.code) {
+      fetchProfile(router.query.code);
     }
-  }, [code]);
+  }, [router.query, router.isReady]); 
 
   const handleLogOutClick = () => {
     localStorage.removeItem("userProfile"); 
@@ -48,6 +51,22 @@ export default function LoggedIn() {
         </p>
       ) : (
         <p>Loading profile information...</p>
+      )}
+      {userProfile ? (
+        <div>
+          <p>Here are your details:</p>
+          <ul>
+            {Object.keys(userProfile).map((attribute, i) => 
+              typeof userProfile[attribute] !== "object" ? (
+                <li key={i}>
+                  <strong>{attribute}:</strong> {userProfile[attribute]}
+                </li>
+              ) : null
+            )}
+          </ul>
+        </div>
+      ) : (
+        <p></p>
       )}
       <div className="button-container"> 
         <button onClick={handleSeeDirectoryClick}>SEE DIRECTORY</button>

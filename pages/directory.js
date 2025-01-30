@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 export default function Directory() {
     const [directory, setDirectory] = useState(null);
-    // const [userEmail, setUserEmail] = useState(null);
 
     useEffect(() => {
         fetch("/api/getDirectory")

@@ -1,9 +1,8 @@
-// [ ] double check logout functionality (might not be working right)
+// [ ] consider making another page that shows the whole user profile
+// [ ]  clean up Directory UI and consider pulling in more fields
 // [ ] ensure all /api files are using try/catch
-// [ ] FIGURE OUT WHY USERS AREN'T ADDED TO GROUP WITH TEST SSO
-// [ ] Make sure EVERYTHING works without localhost
-// [ ] fill out readme
-// [ ] figure out how to log into the app if user clicks the tile in Okta
+// [ ] add gifs to README
+// [ ] remove all console.logs
 // [ ] choose semi colons or no semi colons
 
 export default function Home() {
