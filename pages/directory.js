@@ -24,7 +24,7 @@ export default function Directory() {
 
   return (
     <>
-      <h1>DIRECTORY</h1>
+      <h1>OKTA Directory</h1>
       <ul>
         {directory ? (
             <table>
@@ -54,7 +54,7 @@ export default function Directory() {
                 <p>Loading...</p>
             )}
         </ul>
-      <button onClick={handleGoBackClick}>GO BACK</button>
-    </>
+        <button onClick={handleGoBackClick}>GO BACK</button>
+        </>
   );
 }
