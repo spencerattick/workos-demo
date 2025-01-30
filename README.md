@@ -3,7 +3,7 @@ This project is a [Next.js](https://nextjs.org/) app that uses [WorkOS's](https:
 
 ## Instructions for Deployed App
 The project is deployed here: [workos-demo-ashen.vercel.app](workos-demo-ashen.vercel.app
-) deployed through [Vercel](http://vercel.com/).
+) through [Vercel](http://vercel.com/).
 
 To use it, follow these steps:
 1. Click the `Sign in with Okta` button
@@ -19,6 +19,8 @@ To use it, follow these steps:
 ![Okta Login](./images/okta.png)
 ![Profile page](./images/profile.png)
 ![Directoy page](./images/directory.png)
+Here is the list of users in my connected Okta app for reference:
+![Okta Directory](./images/oktaDirectory.png.png)
 
 ## Instructions for localhost
 1. Clone the GitHub repository:
