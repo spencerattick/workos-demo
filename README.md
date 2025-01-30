@@ -20,7 +20,7 @@ To use it, follow these steps:
 ![Profile page](./images/profile.png)
 ![Directoy page](./images/directory.png)
 Here is the list of users in my connected Okta app for reference:
-![Okta Directory](./images/oktaDirectory.png.png)
+![Okta Directory](./images/oktaDirectory.png)
 
 ## Instructions for localhost
 1. Clone the GitHub repository:
