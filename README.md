@@ -18,6 +18,7 @@ To use it, follow these steps:
 ![Welcome page](./images/welcome.png)
 ![Okta Login](./images/okta.png)
 ![Profile page](./images/profile.png)
+![Directoy page](./images/directory.png)
 
 ## Instructions for localhost
 1. Clone the GitHub repository:
