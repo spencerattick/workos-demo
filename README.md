@@ -14,6 +14,11 @@ To use it, follow these steps:
     password: `supersecret1234`
 3. View the Directory Sync list by clicking `See Directory`
 
+## App Views
+![Welcome page](./images/welcome.png)
+![Okta Login](./images/okta.png)
+![Profile page](./images/profile.png)
+
 ## Instructions for localhost
 1. Clone the GitHub repository:
 

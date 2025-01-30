@@ -15,7 +15,6 @@ export default async (req, res) => {
       clientId: process.env.WORKOS_CLIENT_ID
     });
 
-    console.log("Retrieved profile:", profile);
     res.status(200).json(profile);
   } catch (error) {
     console.error("Error fetching profile:", error);

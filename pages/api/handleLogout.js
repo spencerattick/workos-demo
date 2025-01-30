@@ -7,7 +7,6 @@ export default (req, res) => {
     const host = req.headers.host; 
   
     try {
-        console.log('SERVER LOGOUT')
         const logoutUrl = workos.userManagement.getLogoutUrl({
             sessionId: 'session_01HQAG1HENBZMAZD82YRXDFC0B',
             returnTo: `${protocol}://${host}`,

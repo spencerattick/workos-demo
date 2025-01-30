@@ -24,7 +24,7 @@ export default function Directory() {
 
   return (
     <>
-      <h1>OKTA Directory</h1>
+      <h1>Okta Directory</h1>
       <ul>
         {directory ? (
             <table>
