@@ -42,6 +42,13 @@ export default function LoggedIn() {
     window.location.href = "/directory";
   };
 
+  const toTitleCase = (str) => {
+    return str
+      .replace(/([A-Z])/g, " $1") 
+      .replace(/^./, (char) => char.toUpperCase()); 
+  };
+  
+
   return (
     <>
       <h1>Welcome!</h1>
@@ -53,16 +60,18 @@ export default function LoggedIn() {
         <p>Loading profile information...</p>
       )}
       {userProfile ? (
-        <div>
+        <div className="profile">
           <p>Here are your details:</p>
-          <ul>
-            {Object.keys(userProfile).map((attribute, i) => 
-              typeof userProfile[attribute] !== "object" ? (
-                <li key={i}>
-                  <strong>{attribute}:</strong> {userProfile[attribute]}
-                </li>
-              ) : null
-            )}
+          <ul className="display-profile">
+            {Object.keys(userProfile)
+              .reverse()
+              .map((attribute, i) =>
+                typeof userProfile[attribute] !== "object" ? (
+                  <li key={i}>
+                    <strong>{toTitleCase(attribute)}:</strong> {userProfile[attribute]}
+                  </li>
+                ) : null
+              )}
           </ul>
         </div>
       ) : (
