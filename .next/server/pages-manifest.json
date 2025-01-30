@@ -2,8 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/": "pages/index.js",
   "/loggedIn": "pages/loggedIn.js",
-  "/directory": "pages/directory.js",
   "/api/getDirectory": "pages/api/getDirectory.js",
-  "/": "pages/index.js"
+  "/directory": "pages/directory.js"
 }
